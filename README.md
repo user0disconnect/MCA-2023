@@ -18,5 +18,5 @@ Welcome to my **dataset portfolio** for the **Music Curation & Analytics** cours
 | Week 8 |  Analysing and Extracting Meaning from Audio |
 | Week 9 |  Audio Similarity and Transcription |
 
-![enter image description here](https://www.catalysti.fi/wp-content/uploads/2019/10/TDMovieOut.2.gif)
+![TouchDesigner workflow by Roberto Fusco, 2022](https://github.com/user0disconnect/MCA-2023/blob/27035dd119c0f0ac3c5b670d8ee4f7c440a729fd/TDMovieOut.2.gif)
 
