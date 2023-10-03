@@ -8,7 +8,7 @@ Welcome to my **dataset portfolio** for the **Music Curation & Analytics** cours
 
 | №| About |
 | ------ | ------ |
-| [Week 1](https://github.com/user0disconnect/MCA-2023/blob/54d91f23db0f233c916f91165b3fad15dc8f72f0/week1) |  [Basics of Music Data](https://github.com/user0disconnect/MCA-2023/blob/54d91f23db0f233c916f91165b3fad15dc8f72f0/week1)|
+| [Week 1](https://github.com/user0disconnect/MCA-2023/blob/f5249380c4dc99a79550471142344b45d28afe16/week1.md) |  [Basics of Music Data](https://github.com/user0disconnect/MCA-2023/blob/f5249380c4dc99a79550471142344b45d28afe16/week1.md)|
 | [Week 2](https://github.com/user0disconnect/MCA-2023/blob/54d91f23db0f233c916f91165b3fad15dc8f72f0/week2) |  [Notation basics](https://github.com/user0disconnect/MCA-2023/blob/54d91f23db0f233c916f91165b3fad15dc8f72f0/week2) |
 | Week 3 |  Encoding basics for notation |
 | Week 4 |  Computational analytics of notated music |
