@@ -1,4 +1,4 @@
-# Week 1
+# Week 1: Basics of Music Data
 
 ## Task 1. Dataset Theme 
 
