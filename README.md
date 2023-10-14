@@ -9,12 +9,12 @@ Welcome to my **dataset portfolio** for the **Music Curation & Analytics** cours
 | №| About |
 | ------ | ------ |
 | [Week 1](https://github.com/user0disconnect/MCA-2023/blob/f5249380c4dc99a79550471142344b45d28afe16/week1.md) |  [Basics of Music Data](https://github.com/user0disconnect/MCA-2023/blob/f5249380c4dc99a79550471142344b45d28afe16/week1.md)|
-| [Week 2](https://github.com/user0disconnect/MCA-2023/blob/84aadadf81b6cdac66c15efa1fe71b92e0cc3471/week2.md) |  [Notation basics](https://github.com/user0disconnect/MCA-2023/blob/84aadadf81b6cdac66c15efa1fe71b92e0cc3471/week2.md) |
-| [Week 3](https://github.com/user0disconnect/MCA-2023/blob/ee0a81768de6f4cd35a9a8970071dbb39529568f/week3.md) | [Encoding basics for notation](https://github.com/user0disconnect/MCA-2023/blob/ee0a81768de6f4cd35a9a8970071dbb39529568f/week3.md) | 
-| [Week 4](https://github.com/user0disconnect/MCA-2023/blob/ee0a81768de6f4cd35a9a8970071dbb39529568f/week4.md) |  [Computational analytics of notated music](https://github.com/user0disconnect/MCA-2023/blob/ee0a81768de6f4cd35a9a8970071dbb39529568f/week4.md) |
-| [Week 5](https://github.com/user0disconnect/MCA-2023/blob/ee0a81768de6f4cd35a9a8970071dbb39529568f/week5.md) |  [Standards in curation](https://github.com/user0disconnect/MCA-2023/blob/ee0a81768de6f4cd35a9a8970071dbb39529568f/week5.md) |
-| Week 6 |  Challenges to music curation |
-| Week 7 |  Music as sound |
+| [Week 2](https://github.com/user0disconnect/MCA-2023/blob/84aadadf81b6cdac66c15efa1fe71b92e0cc3471/week2.md) |  [Notation Basics](https://github.com/user0disconnect/MCA-2023/blob/84aadadf81b6cdac66c15efa1fe71b92e0cc3471/week2.md) |
+| [Week 3](https://github.com/user0disconnect/MCA-2023/blob/ee0a81768de6f4cd35a9a8970071dbb39529568f/week3.md) | [Encoding Basics for Notation](https://github.com/user0disconnect/MCA-2023/blob/ee0a81768de6f4cd35a9a8970071dbb39529568f/week3.md) | 
+| [Week 4](https://github.com/user0disconnect/MCA-2023/blob/ee0a81768de6f4cd35a9a8970071dbb39529568f/week4.md) |  [Computational Analytics of Notated Music](https://github.com/user0disconnect/MCA-2023/blob/ee0a81768de6f4cd35a9a8970071dbb39529568f/week4.md) |
+| [Week 5](https://github.com/user0disconnect/MCA-2023/blob/ee0a81768de6f4cd35a9a8970071dbb39529568f/week5.md) |  [Standards in Curation](https://github.com/user0disconnect/MCA-2023/blob/ee0a81768de6f4cd35a9a8970071dbb39529568f/week5.md) |
+| Week 6 |  Challenges to Music Curation |
+| Week 7 |  Music as Sound |
 | Week 8 |  Analysing and Extracting Meaning from Audio |
 | Week 9 |  Audio Similarity and Transcription |
 
