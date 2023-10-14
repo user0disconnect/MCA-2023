@@ -1,4 +1,4 @@
-# Week 2: Notation basics
+# Week 2: Notation Basics
 
 For this week, I decided to transcribe Arvo Pärt's composition **Spiegel im Spiegel** using MuseScore, the finished file can be found below or [here](https://github.com/user0disconnect/MCA-2023/blob/cc7d9f8e096afdcf995462c57e650eb1df212593/spiegel_im_spiegel_part.mscz). 
 
