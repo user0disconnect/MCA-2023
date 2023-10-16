@@ -18,4 +18,4 @@ Here are a few changes I made to the file, as the program was not transcribing t
    
 - Also I added the name of the piece and the artist.
 
-
+[Week 3: Encoding Basics for Notation >>](https://github.com/user0disconnect/MCA-2023/blob/ee0a81768de6f4cd35a9a8970071dbb39529568f/week3.md)
