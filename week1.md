@@ -30,4 +30,6 @@ As mentioned earlier, Arvo Pärt's acoustic dates can be found on streaming serv
 While working on this assignment, I faced many obstacles that influenced my choice of the overall theme. First of all, the biggest challenge in working with music data is the copyright licence. Licences for use are quite expensive and sometimes impossible to obtain due to complicated bureaucracy, so I had to choose the works of Estonian composer Arvo Pärt instead of Ukrainian composers from the Kyiv Avant-Garde group. Secondly, music data always needs structural curation, annotation, and contextualisation. Sometimes, metadata (not to mention annotations) are not properly archived, which leads to the actual loss of a cultural product. This is reinforced by another challenge: the storage and digitisation of large volumes of music recordings, metadata, and musical notation. Dated archives such as IMSLP, LMA, CPDL exist and are being replenished, but it should be understood that they do not cover even 20% of the music ever produced. I would also like to note that the user experience of their websites is not the best, and this creates an additional obstacle to the search.
 
 
+ [Week 2: Notation Basics >>](https://github.com/user0disconnect/MCA-2023/blob/a1a27ff6aeefaa2c29ae34961328eaa31b2d04c6/week2.md)
+
 
