@@ -1,4 +1,4 @@
-[<<Week 2: Notation Basics](https://github.com/user0disconnect/MCA-2023/blob/ed327232766cf79c460fc68a72ec7df806adace0/Labs/week2.md) $~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~$[Week 4:  >>](https://github.com/user0disconnect/MCA-2023/blob/694a528ca479347161b936c1bc81d40dfd27bd1a/Labs/week4.md)
+[<<Week 2: Notation Basics](https://github.com/user0disconnect/MCA-2023/blob/ed327232766cf79c460fc68a72ec7df806adace0/Labs/week2.md) $~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~$[Week 4: Computational Analytics of Notated Music  >>](https://github.com/user0disconnect/MCA-2023/blob/694a528ca479347161b936c1bc81d40dfd27bd1a/Labs/week4.md)
 
 # Week 3: Encoding Basics for Notation
 
