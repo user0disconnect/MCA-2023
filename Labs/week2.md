@@ -9,7 +9,7 @@ For this week, I decided to transcribe Arvo Pärt's composition **Spiegel im Spi
 ![](https://github.com/user0disconnect/MCA-2023/blob/953c2e113c2bb44ad880a83fdebda5de7199819a/spiegelnotes/spiegel_im_spiegel_part2.jpg)
 ![](https://github.com/user0disconnect/MCA-2023/blob/953c2e113c2bb44ad880a83fdebda5de7199819a/spiegelnotes/spiegel_im_spiegel_part3.jpg)
 ![](https://github.com/user0disconnect/MCA-2023/blob/953c2e113c2bb44ad880a83fdebda5de7199819a/spiegelnotes/spiegel_im_spiegel_part4.jpg)
-Here are a few changes I made to the file, as the program was not transcribing the notes correctly at first.
+***Here are a few changes I made to the file, as the program was not transcribing the notes correctly at first.***
 
 - I changed the arrangement, because at the beginning the OMR engine counted everything as Voice.
    
