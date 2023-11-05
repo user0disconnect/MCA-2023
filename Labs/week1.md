@@ -17,7 +17,7 @@ Moreover, on the ECM Records website, you can find the artist's releases, their 
 
 - ### Notated data
 
-Sheet music can be found in databases and catalogues (Presto Music, Stretta Music, Scribd), but in 90% of cases, you need to pay for it. You can find free sheet music in the MuseScore ‘ставим лінк’ database, but the archive itself is limited - it contains only 23 compositions by Arvo Pärt.
+Sheet music can be found in databases and catalogues (Presto Music, Stretta Music, Scribd), but in 90% of cases, you need to pay for it. You can find free sheet music in the MuseScore ‘link’ database, but the archive itself is limited - it contains only 23 compositions by Arvo Pärt.
 
 - ### Acoustic data
 
