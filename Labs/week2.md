@@ -1,3 +1,6 @@
+[<<Week 2:](https://github.com/user0disconnect/MCA-2023/blob/9cfa766c9b4392e9e8e82cd3269585fa751e6e7f/Labs/week1.md) [Week 3: Encoding Basics for Notation >>](https://github.com/user0disconnect/MCA-2023/blob/ee0a81768de6f4cd35a9a8970071dbb39529568f/week3.md)
+
+
 # Week 2: Notation Basics
 
 For this week, I decided to transcribe Arvo Pärt's composition **Spiegel im Spiegel** using MuseScore, the finished file can be found below or [here](https://github.com/user0disconnect/MCA-2023/blob/cc7d9f8e096afdcf995462c57e650eb1df212593/spiegel_im_spiegel_part.mscz). 
@@ -18,4 +21,3 @@ Here are a few changes I made to the file, as the program was not transcribing t
    
 - Also I added the name of the piece and the artist.
 
-[Week 3: Encoding Basics for Notation >>](https://github.com/user0disconnect/MCA-2023/blob/ee0a81768de6f4cd35a9a8970071dbb39529568f/week3.md)
