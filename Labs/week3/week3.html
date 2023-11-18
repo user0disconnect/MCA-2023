@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Week 4: Computational Analytics of Notated Music</title>
+    <title>Week 3: Encoding Basics for Notation</title>
     <style>
         body {
             background-color: black;
@@ -23,46 +23,70 @@
             font-weight: bold;
         }
         h1 {
-            font-weight: bold;
+            font-style: normal;
             font-size: 24px;
         }
         h2 {
+            font-style: oblique;
             font-size: 20px;
         }
         p {
-            font-weight: lighter;
+            text-align: center;
         }
-        img {
+        .file-links {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .file-links a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
             display: block;
-            margin: 20px auto;
-            max-width: 100%;
-            height: auto;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <a href="https://user0disconnect.github.io/MCA-2023/Labs/week3/week3.html">&lt;&lt;Week 3: Encoding Basics for Notation</a>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="https://user0disconnect.github.io/MCA-2023/Labs/week5/week5.html">Week 5: Standards in Curation &gt;&gt;</a>
+        <a href="https://user0disconnect.github.io/MCA-2023/Labs/week2/week2.html">&lt;&lt;Week 2: Notation Basics</a>
+        <a href="https://user0disconnect.github.io/MCA-2023/Labs/week3/week3.html">Week 4: Computational Analytics of Notated Music &gt;&gt;</a>
     </header>
 
-    <h1>Week 4: Computational Analytics of Notated Music</h1>
+    <h1>Week 3: Encoding Basics for Notation</h1>
 
-    <h2>Task 1: Generating a Piano Roll and Pitch Histogram using music21</h2>
+    <h2>Task 1: Rendering MEI file using Verovio</h2>
 
-    <h3>1. Pitch Histogram</h3>
-    <p>A pitch bar graph shows how many times a particular note has been played in a song. In my case, the most common pitch in Arvo Pärt's Spiegel im Spiegel is C5.</p>
-    <img src="https://github.com/user0disconnect/MCA-2023/blob/3433255ff5b5dca80c4ba633495cc88b6121ff4c/histograms/pitch_histogram.png" alt="Pitch Histogram">
+    <p>First, we needed to export the MusicXML file from MuseScore. Then we had to convert the MusicXML file to an MEI file. You can find all the files here:</p>
 
-    <h3>2. Piano Roll</h3>
-    <p>Piano roll is a diagram that shows the time position of each note, where it starts playing, its duration (length), and pitch.</p>
-    <img src="https://github.com/user0disconnect/MCA-2023/blob/3433255ff5b5dca80c4ba633495cc88b6121ff4c/histograms/%D0%B7iano_roll_of_pitches.png" alt="Piano Roll">
-
-    <h3>3. Scatter Plot of Pitches</h3>
-    <p>This pitch scatter plot shows the correlation between pitch and note length.</p>
-    <img src="https://github.com/user0disconnect/MCA-2023/blob/3433255ff5b5dca80c4ba633495cc88b6121ff4c/histograms/scatter_plot_of_pitches.png" alt="Scatter Plot of Pitches">
-
+    <div class="file-links">
+        <a href="https://github.com/user0disconnect/MCA-2023/blob/06a998026fb3ce76ebb7854349c69adf39af2698/myfile.mei">MEI</a>
+        <a href="https://github.com/user0disconnect/MCA-2023/blob/06a998026fb3ce76ebb7854349c69adf39af2698/spiegel_im_spiegel_part.mscz">MusicXML</a>
+    </div>
+    
+ <div id="app">Verovio is loading...</div>
+    <script type="module">
+        import 'https://www.verovio.org/javascript/app/verovio-app.js';
+        
+        const options = {
+            defaultView: 'responsive', // default is 'responsive', alternative is 'document'
+            defaultZoom: 3, // 0-7, default is 4
+            enableResponsive: true, // default is true
+            enableDocument: true // default is true
+        }
+        
+        // A MusicXML file
+        var file = 'data/myfile.mei';
+        // A MEI file
+        //var file = 'https://www.verovio.org/editor/brahms.mei';
+        
+        const app = new Verovio.App(document.getElementById("app"), options);
+        fetch(file)
+            .then(function(response) {
+                return response.text();
+            })
+            .then(function(text) {
+                app.loadData(text);
+            });
+    </script>
 </body>
 </html>
