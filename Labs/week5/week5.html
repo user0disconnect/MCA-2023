@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Week 5: Standards in Curation</title>
     <style>
+        ul.a {
+  list-style-type: circle;
+}
+        div {
+  border: 5px solid black;
+  background-color: #39383C;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
         body {
             background-color: black;
             color: white;
@@ -23,7 +34,10 @@
             font-weight: bold;
           
         h1, h2 {
+            font-weight: normal;
             text-align: center;
+            font-weight: bold;
+            padding: 10px;
         }
         p {
             margin: 20px;
@@ -31,7 +45,7 @@
         }
         code {
             display: block;
-            background-color: #333;
+            background-color: black;
             color: white;
             padding: 10px;
             overflow-x: auto;
@@ -50,7 +64,7 @@
 
     <h2>Task 1: Metadata Scheme</h2>
     <p>In a group lab, my colleagues and I created the following metadata schema, which you can find below.</p>
-    <ul>
+    <ul class="a">
         <li><strong>title:</strong> name of the transcribed piece, original name;</li>
         <li><strong>composer:</strong> name of the person who created the product;</li>
         <li><strong>lyricist:</strong> name of the person who created the lyrics;</li>
@@ -67,7 +81,8 @@
     <h2>Task 2: Modifying the MEI File According to the Schema</h2>
     <p>The MEI file was edited based on the scheme parameters above. Below you can see the code snippet from the MEI-Friend editor. The file is available for download <a href="https://github.com/user0disconnect/MCA-2023/blob/b63f99629b656faa9f126d380330f7e0117810bb/Labs/week5/spiegel_im_spiegel_week6.mei">here</a>.</p>
 
-    <code>
+   <div> 
+       <code>
         &lt;titleStmt xml:id="title"&gt;<br>
         &emsp;&lt;title auth.uri="https://lccn.loc.gov/n00063915" auth="Library of Congress" xml:id="m-8"&gt; Spiegel im Spiegel (1978)&lt;/title&gt;<br>
         &emsp;&lt;title xml:id="subtitle1" type="subtitle"&gt; An arrangement for piano &lt;/title&gt;<br>
@@ -81,6 +96,7 @@
         &emsp;&lt;/respStmt&gt;<br>
         &lt;/titleStmt&gt;
     </code>
+       </div>
 
 </body>
 </html>
