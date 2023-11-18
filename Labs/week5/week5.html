@@ -1,1 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 5: Standards in Curation</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Helvetica', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+       header {
+            padding: 10px;
+            text-align: center;
+        }
+        header a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+          
+        h1, h2 {
+            text-align: center;
+        }
+        p {
+            margin: 20px;
+            line-height: 1.5;
+        }
+        code {
+            display: block;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            overflow-x: auto;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+  
+  <header>
+        <a href="https://user0disconnect.github.io/MCA-2023/Labs/week4/week4.html">&lt;&lt; Week 4: Computational Analytics of Notated Music</a>
+        <a href="https://user0disconnect.github.io/MCA-2023/Labs/week6/week6.html">Week 6: Challenges to music curation &gt;&gt;</a>
+    </header>
+    <h1>Week 5: Standards in Curation</h1>
+
+    <h2>Task 1: Metadata Scheme</h2>
+    <p>In a group lab, my colleagues and I created the following metadata schema, which you can find below.</p>
+    <ul>
+        <li><strong>title:</strong> name of the transcribed piece, original name;</li>
+        <li><strong>composer:</strong> name of the person who created the product;</li>
+        <li><strong>lyricist:</strong> name of the person who created the lyrics;</li>
+        <li><strong>arranger:</strong> name of the person who created a particular arrangement of the product;</li>
+        <li><strong>publisher:</strong> name of the person/label who is responsible for the publication;</li>
+        <li><strong>location:</strong> city/country of the publisher;</li>
+        <li><strong>date:</strong> date of publication;</li>
+        <li><strong>source:</strong> from which database the product is taken;</li>
+        <li><strong>copyright:</strong> a license to use and distribute the product;</li>
+        <li><strong>encoder:</strong> name of the person who encoded the MEI file;</li>
+        <li><strong>remaster:</strong> date, place, executors of the product re-release.</li>
+    </ul>
+
+    <h2>Task 2: Modifying the MEI File According to the Schema</h2>
+    <p>The MEI file was edited based on the scheme parameters above. Below you can see the code snippet from the MEI-Friend editor. The file is available for download <a href="https://github.com/user0disconnect/MCA-2023/blob/b63f99629b656faa9f126d380330f7e0117810bb/Labs/week5/spiegel_im_spiegel_week6.mei">here</a>.</p>
+
+    <code>
+        &lt;titleStmt xml:id="title"&gt;<br>
+        &emsp;&lt;title auth.uri="https://lccn.loc.gov/n00063915" auth="Library of Congress" xml:id="m-8"&gt; Spiegel im Spiegel (1978)&lt;/title&gt;<br>
+        &emsp;&lt;title xml:id="subtitle1" type="subtitle"&gt; An arrangement for piano &lt;/title&gt;<br>
+        &emsp;&lt;title type="label" auth.uri="https://lccn.loc.gov/no2007083328" auth="Library of Congress" xml:id="subtitle"&gt; ECM Records &lt;/title&gt;<br>
+        &emsp;&lt;composer xml:id="composer"&gt; Arvo Pärt &lt;/composer&gt;<br>
+        &emsp;&lt;arranger xml:id="arranger1"&gt; Alexander Malter &lt;/arranger&gt;<br>
+        &emsp;&lt;arranger xml:id="arranger2"&gt; Sergej Bezrodny &lt;/arranger&gt;<br>
+        &emsp;&lt;respStmt&gt;<br>
+        &emsp;&emsp;&lt;resp&gt; Encoded by &lt;/resp&gt;<br>
+        &emsp;&emsp;&lt;name&gt; Anastasiia Kolodka &lt;/name&gt;<br>
+        &emsp;&lt;/respStmt&gt;<br>
+        &lt;/titleStmt&gt;
+    </code>
+
+</body>
+</html>
 
