@@ -5,10 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Week 5: Standards in Curation</title>
     <style>
-        ul.a {
-  list-style-type: circle;
-}
-    
         body {
             background-color: black;
             color: white;
@@ -16,27 +12,8 @@
             margin: 0;
             padding: 0;
         }
-       header {
-            padding: 10px;
+        h1, h2 {
             text-align: center;
-        }
-        header a {
-            color: white;
-            text-decoration: none;
-            margin: 0 10px;
-            font-weight: bold;
-          
-        h1 {
-            font-size: 24px;
-            font-weight: normal;
-            text-align: center;
-            font-weight: bold;
-        }
-            h2 {
-            font-size: 20px;
-            font-style: normal;
-            text-align: center;
-            font-weight: normal;
         }
         p {
             margin: 20px;
@@ -44,7 +21,7 @@
         }
         code {
             display: block;
-            background-color: #39383C;
+            background-color: #333;
             color: white;
             padding: 10px;
             overflow-x: auto;
@@ -54,16 +31,12 @@
     </style>
 </head>
 <body>
-  
-  <header>
-        <a href="https://user0disconnect.github.io/MCA-2023/Labs/week4/week4.html">&lt;&lt; Week 4: Computational Analytics of Notated Music</a>
-        <a href="https://user0disconnect.github.io/MCA-2023/Labs/week6/week6.html">Week 6: Challenges to music curation &gt;&gt;</a>
-    </header>
+
     <h1>Week 5: Standards in Curation</h1>
 
     <h2>Task 1: Metadata Scheme</h2>
     <p>In a group lab, my colleagues and I created the following metadata schema, which you can find below.</p>
-    <ul class="a">
+    <ul>
         <li><strong>title:</strong> name of the transcribed piece, original name;</li>
         <li><strong>composer:</strong> name of the person who created the product;</li>
         <li><strong>lyricist:</strong> name of the person who created the lyrics;</li>
@@ -80,9 +53,7 @@
     <h2>Task 2: Modifying the MEI File According to the Schema</h2>
     <p>The MEI file was edited based on the scheme parameters above. Below you can see the code snippet from the MEI-Friend editor. The file is available for download <a href="https://github.com/user0disconnect/MCA-2023/blob/b63f99629b656faa9f126d380330f7e0117810bb/Labs/week5/spiegel_im_spiegel_week6.mei">here</a>.</p>
 
- 
-
-       <code>
+    <code>
         &lt;titleStmt xml:id="title"&gt;<br>
         &emsp;&lt;title auth.uri="https://lccn.loc.gov/n00063915" auth="Library of Congress" xml:id="m-8"&gt; Spiegel im Spiegel (1978)&lt;/title&gt;<br>
         &emsp;&lt;title xml:id="subtitle1" type="subtitle"&gt; An arrangement for piano &lt;/title&gt;<br>
@@ -97,8 +68,5 @@
         &lt;/titleStmt&gt;
     </code>
 
-      
-
 </body>
 </html>
-
