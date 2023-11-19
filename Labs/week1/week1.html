@@ -170,6 +170,15 @@ ul.trigger.slideout:nth-child(1) {
   -moz-transform: translateY(-22.5em) translateX(0em);
   transform: translateY(-22.5em) translateX(0em);
 }
+
+         var button = document.querySelector('.popup'),
+    items = document.querySelectorAll('.trigger');
+var openCloseMenu = function() {
+  for(i=0; i < items.length; i++){
+    items[i].classList.toggle('slideout');
+  }
+}
+        
     </style>
 </head>
 <body>
@@ -189,13 +198,8 @@ ul.trigger.slideout:nth-child(1) {
   </ul>
   <button class="popup">MENU</button>
 </div>
-    var button = document.querySelector('.popup'),
-    items = document.querySelectorAll('.trigger');
-var openCloseMenu = function() {
-  for(i=0; i < items.length; i++){
-    items[i].classList.toggle('slideout');
-  }
-}
+   
+   
 button.onclick = openCloseMenu;
       
     <header>
