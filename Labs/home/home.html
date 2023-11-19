@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MCA-2023</title>
     <style>
+        * {
+  box-sizing: border-box;
+}
         body {
             background-color: black;
             color: white;
@@ -32,6 +35,7 @@
         a:hover {
             color: #66ccff;
         }
+        
         #myVideo {
   position: fixed;
   right: 0;
@@ -40,21 +44,38 @@
   min-height: 100%;
 }
 
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 26, 255, 0.7);
+  color: white;
+  width: 100%;
+  padding: 20px;
 
+    #myBtn {
+  width: 100px;
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: white;
+  cursor: pointer;
+}
 
 #myBtn:hover {
-  background: #ddd;
+  background: white;
   color: black;
 }
+
     </style>
 </head>
 <body>
 
-    <video autoplay muted loop id="myVideo">
+    <video autoplay unmuted loop id="myVideo">
   <source src="Arvo Pärt s Vision of Music - A Tender Play.mp4" type="video/mp4">
 </video>
 
-    
+<div class="content">    
     <h1>MCA-2023</h1>
 
     <p>Hello!</p>
@@ -103,6 +124,21 @@
             <td><a href="https://user0disconnect.github.io/MCA-2023/Labs/week9/week9.html">Audio Similarity and Transcription</a></td>
         </tr>
     </table>
+    <button id="myBtn" onclick="myFunction()">Pause</button>
+</div>
+    <script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
 
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+    </script>
 </body>
 </html>
