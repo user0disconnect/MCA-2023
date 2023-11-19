@@ -48,10 +48,156 @@
             margin: 20px;
             line-height: 1.5;
         }
+        .nav {
+  position: fixed;
+  top: 0px;
+  z-index: 1000;
+}
+
+
+/* ADJUST MENU POP UP */
+
+.nav li {
+  list-style-type: none;
+  width: 85px;
+  height: 30px;
+  text-align: center;
+  z-index: 5;
+  cursor: pointer;
+  display: block;
+}
+
+.nav li:hover {
+  display: block;
+}
+
+.nav li:first-child {
+  list-style-type: none;
+  display: block;
+  width: 85px;
+  height: 30px;
+  text-align: center;
+  z-index: 5;
+  cursor: pointer;
+}
+
+.nav li:first-child:hover {
+  display: block;
+}
+
+
+/* CONTROL MENU POP UP MENU FONT STYLE */
+
+.nav li a {
+  font-family: Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #ffffff;
+  display: block;
+  padding-top: 18px;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+
+/* MENU FONT HOVER */
+
+.nav li a:hover {
+  color: blue;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 0;
+}
+
+button.popup,
+ul.trigger {
+  text-align: center;
+  width: 4.7em;
+  height: 4.7em;
+  position: fixed;
+  margin-bottom: 0px;
+  top: 0;
+  left: 0;
+  -webkit-transition: .2s linear;
+  -moz-transition: .2s linear;
+  transition: .2s linear;
+  border: none;
+}
+
+button {
+  background: none;
+}
+
+
+/* ADJUST MARGIN BOTTOM */
+
+ul.trigger {
+  margin-left: 14px;
+  margin-top: 50px;
+}
+
+
+/* ADJUST MENU COLOR/SIZE/POSITION */
+
+button.popup {
+  width: 85px;
+  height: 45px;
+  text-align: center;
+  margin-bottom: 0;
+  margin-left: 14px;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+  cursor: pointer;
+  font-size: 0.75em;
+  font-weight: bold;
+  color: #fff;
+}
+
+
+/* ADJUST ROLL UP DISTANCE */
+
+ul.trigger.slideout:nth-child(1) {
+  -webkit-transform: translateY(-22.5em) translateX(0em);
+  -moz-transform: translateY(-22.5em) translateX(0em);
+  transform: translateY(-22.5em) translateX(0em);
+}
     </style>
 </head>
 <body>
-   
+
+    <div class="nav">
+  <ul class="trigger">
+    <li><a href="#" class="menufont">HOME</a></li>
+    <li><a href="#" class="menufont">WEEK1</a></li>
+    <li><a href="#" class="menufont">WEEK2</a></li>
+    <li><a href="#" class="menufont">WEEK3</a></li>
+    <li><a href="#" class="menufont">WEEK4</a></li>
+    <li><a href="#" class="menufont">WEEK5</a></li>
+    <li><a href="#" class="menufont">WEEK6</a></li>
+     <li><a href="#" class="menufont">WEEK7</a></li>
+     <li><a href="#" class="menufont">WEEK8</a></li>
+     <li><a href="#" class="menufont">WEEK9</a></li>
+  </ul>
+  <button class="popup">MENU</button>
+</div>
+    var button = document.querySelector('.popup'),
+    items = document.querySelectorAll('.trigger');
+var openCloseMenu = function() {
+  for(i=0; i < items.length; i++){
+    items[i].classList.toggle('slideout');
+  }
+}
+button.onclick = openCloseMenu;
+      
     <header>
         <a href="https://user0disconnect.github.io/MCA-2023/Labs/home/home.html">&lt;&lt; Home: MCA-2023</a>
         <a href="https://user0disconnect.github.io/MCA-2023/Labs/week2/week2.html">Week 2: Notation basics &gt;&gt;</a>
