@@ -53,7 +53,7 @@
 
 details {
   max-width: 12rem;
-  position: relative;
+  position: sticky;
 }
 
 summary {
@@ -90,20 +90,20 @@ ul {
   padding: 0;
   padding: 1rem;
   border-radius: 0.25rem;
-  box-shadow: 0 1px 2px hsla(220, 10%, 20%, 0.5), 0 2px 6px hsla(220, 10%, 20%, 0.2);
+  box-shadow: 0 1px 2px  blue, 0 2px 6px  blue;
   background-color: black;
 }
 
 ul::before {
   content: '';
-  position: absolute;
+  position: sticky;
   top: -1.45rem;
   left: 1rem;
   width: 0;
   height: 0;
   border: 0.75rem solid transparent;
   border-bottom-color: black;
-  filter: drop-shadow(0 -2px 1px hsla(220, 10%, 20%, 0.1));
+  filter: drop-shadow(0 -2px 1px  blue);
 }
 
 * {
