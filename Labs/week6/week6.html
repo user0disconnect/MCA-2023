@@ -18,6 +18,7 @@
         }
         header {
             font-weight: bold;
+            text-align: center;
         }
         header a {
             color: white;
@@ -143,22 +144,19 @@ a:hover {
 
     <h2>Task 2: Metadata Rendering.</h2>
 
-    <p>Spiegel im Spiegel (1995)</p>
-    <p>Arvo Pärt</p>
+    <p style="text-shadow: 5px 5px 3px blue;font-size:18px;">Spiegel im Spiegel (1995)</p>
+    <p style="text-shadow: 5px 5px 3px blue;font-size:18px;>Arvo Pärt</p>
     
     <p>An arrangement for piano by <strong>Alexander Malter and Sergej Bezrodny</strong></p>
+    <p>Date: <strong><em>July 1995</strong></em></p>
+    <p>Geography: <strong><em>Frankfurt, Germany</strong></em></p>
+    <p>Genre: <strong><em>Contemporary Classical</strong></em></p>
+    <p>Label: <strong><em>ECM Records</strong></em></p>
+    <p>Encoded by <strong><em>Anastasiia Kolodka</strong></em></p>
+    <p>Date: <strong><em>October 2023</strong></em></p>
+    <p>License: <strong><em>Creative Commons Attribution 4.0 International, CC BY-NC-SA</strong></em></p>
     
-    <p>Date: <em>July 1995</em></p>
-    <p>Geography: <em>Frankfurt, Germany</em></p>
-    <p>Genre: <em>Contemporary Classical</em></p>
-    <p>Label: <em>ECM Records</em></p>
-    
-    <p>Encoded by <em>Anastasiia Kolodka</em></p>
-    <p>Date: <em>October 2023</em></p>
-    
-    <p>License: <em>Creative Commons Attribution 4.0 International, CC BY-NC-SA</em></p>
-    
-      <div id="MEImeta"></div>
+    <div id="MEImeta"></div>
   <div id="app">Verovio is loading...</div>
   <script type="module">
       import 'https://www.verovio.org/javascript/app/verovio-app.js';
@@ -184,7 +182,7 @@ a:hover {
   <script>
     // Get, parse, and show TEI data
     var CETEIcean = new CETEI()
-    CETEIcean.getHTML5("spiegel_im_spiegel_weekk7.mei", function(data) {
+    CETEIcean.getHTML5('spiegel_im_spiegel_weekk7.mei', function(data) {
       document.getElementById("TEI").appendChild(data)
     })
     // Get, parse and show MEI header data
@@ -194,7 +192,7 @@ a:hover {
         mei: "http://www.music-encoding.org/ns/mei"
       }
     })
-    CETEI4MEI.getHTML5("spiegel_im_spiegel_weekk7.mei", function(data) {
+    CETEI4MEI.getHTML5('spiegel_im_spiegel_weekk7.mei', function(data) {
       // get header
       var meiHead = data.querySelector('mei-meiHead')
       document.getElementById("MEImeta").appendChild(meiHead)
@@ -208,7 +206,7 @@ a:hover {
         scale: 50,
         adjustPageHeight: true
     })
-    fetch("spiegel_im_spiegel_weekk7.mei").then(function( response ) {
+    fetch('spiegel_im_spiegel_weekk7.mei').then(function( response ) {
         response.text().then(function( data ) {
           var svg = vrvToolkit.renderData(data, {})
           document.getElementById('MEI').innerHTML = svg
