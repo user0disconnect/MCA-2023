@@ -234,8 +234,8 @@ a:hover {
 </table>
   <h2>Task 2: Basic Analysis of Tracks in SonicVisualizer</h2>
   <h3>Lamentate VII.Stridendo by Maki Namekawa</h3>
-    <img id="myImg" src="pngs/lamante_wf.png" alt="Waveform of Lamentate VII.Stridendo by Maki Namekawa" style="width:100%;max-width:700px class="center"" target="_blank">
-     <img id="myImg" src="pngs/lamentate_spectrogram.png" alt="Spectrogram of Lamentate VII.Stridendo by Maki Namekawa" style="width:100%;max-width:700px class="center""target="_blank">
+    <img data-enlargable width="100" id="myImg" src="pngs/lamante_wf.png" alt="Waveform of Lamentate VII.Stridendo by Maki Namekawa" style="width:100%;max-width:700px class="center"">
+     <img id="myImg" src="pngs/lamentate_spectrogram.png" alt="Spectrogram of Lamentate VII.Stridendo by Maki Namekawa" style="width:100%;max-width:700px class="center"">
     
 <h3>Pro et contra: III.Allegro by Frans Helmerson</h3>
  <img id="myImg" src="pngs/pro_et_contra(wf).png" alt="Waveform of Pro et contra: III.Allegro by Frans Helmerson" style="width:100%;max-width:700px class="center"">
@@ -244,7 +244,20 @@ a:hover {
     <h3>Drei Hirtenkinder aus Fátima by Johannes Stecher</h3>
      <img id="myImg" src="pngs/drei_hirtenkinder(wf).png" alt="Waveform of Drei Hirtenkinder aus Fátima by Johannes Stecher" style="width:100%;max-width:700px class="center"">
      <img id="myImg" src="pngs/drei_hirtenkinder.png" alt="Spectrogram of Drei Hirtenkinder aus Fátima by Johannes Stecher" style="width:100%;max-width:700px class="center"">
-
+$('img[data-enlargable]').addClass('img-enlargable').click(function(){
+    var src = $(this).attr('src');
+    $('<div>').css({
+        background: 'RGBA(0,0,0,.5) url('+src+') no-repeat center',
+        backgroundSize: 'contain',
+        width:'100%', height:'100%',
+        position:'fixed',
+        zIndex:'10000',
+        top:'0', left:'0',
+        cursor: 'zoom-out'
+    }).click(function(){
+        $(this).remove();
+    }).appendTo('body');
+});
     
    
 
