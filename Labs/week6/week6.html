@@ -153,7 +153,7 @@ a:hover {
           enableDocument: true // default is true
       }
       // A MusicXML file
-      var file = 'data/spiegel_im_spiegel_weekk7.mei';
+      var file = 'spiegel_im_spiegel_weekk7.mei';
       // A MEI file
       //var file = 'https://www.verovio.org/editor/brahms.mei';
       const app = new Verovio.App(document.getElementById("app"), options);
@@ -178,7 +178,7 @@ a:hover {
         mei: "http://www.music-encoding.org/ns/mei"
       }
     })
-    CETEI4MEI.getHTML5("data/spiegel_im_spiegel_weekk7.mei", function(data) {
+    CETEI4MEI.getHTML5("spiegel_im_spiegel_weekk7.mei", function(data) {
       // get header
       var meiHead = data.querySelector('mei-meiHead')
       document.getElementById("MEImeta").appendChild(meiHead)
@@ -192,7 +192,7 @@ a:hover {
         scale: 50,
         adjustPageHeight: true
     })
-    fetch("data/spiegel_im_spiegel_weekk7.mei").then(function( response ) {
+    fetch("spiegel_im_spiegel_weekk7.mei").then(function( response ) {
         response.text().then(function( data ) {
           var svg = vrvToolkit.renderData(data, {})
           document.getElementById('MEI').innerHTML = svg
