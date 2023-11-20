@@ -112,6 +112,11 @@ a:hover {
   text-decoration: none;
   color: blue;
 }
+        table, th, td {
+  border:0px solid black;
+  text-align: center;
+    filter: drop-shadow(0 0.5px 2px  blue);
+}
     </style>
 </head>
 <body>
@@ -147,14 +152,41 @@ a:hover {
     <p style="font-family:courier; font-size:18px;">Spiegel im Spiegel (1995)</p>
     <p style="font-family:courier; font-size:18px;">Arvo Pärt</p>
     
-    <p style="font-family:courier; font-size:18px;">An arrangement for piano by Alexander Malter and Sergej Bezrodny</p>
-    <p style="font-family:courier;font-size:16px;">Date: July 1995</strong></p>
-    <p style="font-family:courier;font-size:16px;">Geography: Frankfurt, Germany</p>
-    <p style="font-family:courier;font-size:16px;">Genre: Contemporary Classical</p>
-    <p style="font-family:courier;font-size:16px;">Label: ECM Records</p>
-    <p style="font-family:courier;font-size:16px;">Encoded by Anastasiia Kolodka</p>
-    <p style="font-family:courier;font-size:16px;">Date: October 2023</p>
-    <p style="font-family:courier;font-size:16px;">License: Creative Commons Attribution 4.0 International, CC BY-NC-SA</p>
+   <table style="width:100%">
+  <tr>
+    <th>Metadata Tag</th>
+    <th>Name</th>
+  </tr>
+  <tr>
+    <td>Date:</td>
+    <td>July 1995</td>
+  </tr>
+  <tr>
+    <td>Geography:</td>
+    <td>Frankfurt, Germany</td>
+  </tr>
+   <tr>
+    <td>Genre:</td>
+    <td>Contemporary Classical</td>
+  </tr>
+  <tr>
+    <td>Label:</td>
+    <td>ECM Records</td>
+  </tr>
+  <tr>
+    <td>Encoded by</td>
+    <td>Anastasiia Kolodka</td>
+  </tr>
+<tr>
+    <td>Date:</td>
+    <td>October 2023</td>
+  </tr>
+  <tr>
+    <td>License:</td>
+    <td>Creative Commons Attribution 4.0 International, CC BY-NC-SA
+</td>
+  </tr>
+</table>
     
     <div id="MEImeta"></div>
   <div id="app">Verovio is loading...</div>
@@ -213,6 +245,7 @@ a:hover {
         })
     })
   </script>
+
 
 </body>
 </html>
