@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Week 6: Curation Challenges</title>
+      <link rel="stylesheet" href="css/CETEIcean.css" media="all" />
+  <link rel="stylesheet" href="css/style.css" media="all" />
+  <script src="js/CETEI.js"></script>
     <style>
         body {
             background-color: black;
@@ -24,19 +27,110 @@
         header a:hover {
             text-decoration: none;
           text-align: center;
-          text-shadow: 5px 5px 3px blue;
+         
         }
         h1, h2 {
             text-align: center;
+             text-shadow: 5px 5px 3px blue;
         }
        p {
             margin: 20px;
             line-height: 1.5;
         }
+        details {
+  max-width: 12rem;
+  position: relative;
+     padding: 0;
+}
+
+summary {
+  list-style: none;
+  cursor: pointer;
+    
+}
+
+summary::after {
+  content: '☰';
+  position: sticky;
+  left: 0.25rem;
+  font-size: 1.25rem;
+    
+}
+
+details[open] summary::after {
+  content: '×'
+}
+
+details[open] summary::before {
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+ul {
+  position: relative;
+  width: 100%;
+  left: 0;
+  top: 1.5rem;
+  list-style: none;
+  font-size: 15px;
+  padding: 5;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 1px 2px  blue, 0 2px 6px  blue;
+  background-color: black;
+  text-align: center;
+}
+
+ul::before {
+  content: '';
+  position: absolute;
+  top: -1.45rem;
+  left: 1rem;
+  width: 0;
+  height: 0;
+    padding: 5;
+  border: 0.75rem solid transparent;
+  border-bottom-color: black;
+  filter: drop-shadow(0 -2px 1px  blue);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: blue;
+}
     </style>
 </head>
 <body>
 
+     <details>
+  <summary>Menu</summary>
+  <ul>
+    <li><a href="https://user0disconnect.github.io/MCA-2023/Labs/home/home.html">Home</a></li>
+    <li><a href="https://user0disconnect.github.io/MCA-2023/Labs/week1/week1.html">Week1</a></li>
+    <li><a href="https://user0disconnect.github.io/MCA-2023/Labs/week2/week2.html">Week2</a></li>
+    <li><a href="https://user0disconnect.github.io/MCA-2023/Labs/week3/week3.html">Week3</a></li>
+    <li><a href="https://user0disconnect.github.io/MCA-2023/Labs/week4/week4.html">Week4</a></li>
+    <li><a href="https://user0disconnect.github.io/MCA-2023/Labs/week5/week5.html">Week5</a></li>
+    <li><a href="https://user0disconnect.github.io/MCA-2023/Labs/week6/week6.html">Week6</a></li>
+    <li><a href="https://user0disconnect.github.io/MCA-2023/Labs/week7/week7.html">Week7</a></li>
+    <li><a href="https://user0disconnect.github.io/MCA-2023/Labs/week8/week8.html">Week8</a></li>
+    <li><a href="https://user0disconnect.github.io/MCA-2023/Labs/week9/week9.html">Week9</a></li>
+  </ul>
+</details>
+    
     <header>
         <a href="https://user0disconnect.github.io/MCA-2023/Labs/week5/week5.html">&lt;&lt; Week 5: Standards in Curation</a>
         <a href="https://user0disconnect.github.io/MCA-2023/Labs/week7/week7.html">Week 7: Music as Sound &gt;&gt;</a>
@@ -48,7 +142,63 @@
     <p>Continuing the editing of the MEI file from last week, today I added the genre category and licence to the meta schema. You can find the edited file <a href="https://github.com/user0disconnect/MCA-2023/blob/57a0aac3dadd165ad13b55e1b0d94fe61b299d3c/data/spiegel_im_spiegel_weekk7.mei">here</a>.</p>
 
     <h2>Task 2: Metadata Rendering.</h2>
-    <!-- Add your content for Task 2 here -->
+      <div id="MEImeta"></div>
+  <div id="app">Verovio is loading...</div>
+  <script type="module">
+      import 'https://www.verovio.org/javascript/app/verovio-app.js';
+      const options = {
+          defaultView: 'responsive', // default is 'responsive', alternative is 'document'
+          defaultZoom: 3, // 0-7, default is 4
+          enableResponsive: true, // default is true
+          enableDocument: true // default is true
+      }
+      // A MusicXML file
+      var file = 'data/spiegel_im_spiegel_weekk7.mei';
+      // A MEI file
+      //var file = 'https://www.verovio.org/editor/brahms.mei';
+      const app = new Verovio.App(document.getElementById("app"), options);
+      fetch(file)
+          .then(function(response) {
+              return response.text();
+          })
+          .then(function(text) {
+              app.loadData(text);
+          });
+  </script>
+  <script>
+    // Get, parse, and show TEI data
+    var CETEIcean = new CETEI()
+    CETEIcean.getHTML5("data/example.xml", function(data) {
+      document.getElementById("TEI").appendChild(data)
+    })
+    // Get, parse and show MEI header data
+    var CETEI4MEI = new CETEI()
+    CETEI4MEI.addBehaviors({
+      namespaces: {
+        mei: "http://www.music-encoding.org/ns/mei"
+      }
+    })
+    CETEI4MEI.getHTML5("data/spiegel_im_spiegel_weekk7.mei", function(data) {
+      // get header
+      var meiHead = data.querySelector('mei-meiHead')
+      document.getElementById("MEImeta").appendChild(meiHead)
+    })
+    var vrvToolkit = new verovio.toolkit()
+    vrvToolkit.setOptions(options = {
+        pageHeight: 500,
+        pageWidth: 1000,
+        ignoreLayout: 1,
+        border: 20,
+        scale: 50,
+        adjustPageHeight: true
+    })
+    fetch("data/spiegel_im_spiegel_weekk7.mei").then(function( response ) {
+        response.text().then(function( data ) {
+          var svg = vrvToolkit.renderData(data, {})
+          document.getElementById('MEI').innerHTML = svg
+        })
+    })
+  </script>
 
 </body>
 </html>
