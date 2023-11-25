@@ -24,6 +24,8 @@
             font-weight: bold;
             text-shadow: 5px 5px 3px blue;
         }
+        p{
+        }
         details {
   max-width: 12rem;
   position: relative;
@@ -104,7 +106,22 @@ a:hover {
     filter: drop-shadow(0 0.5px 2px  blue);
             margin-left: 0px;
 }
+.container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
 
+.container img {vertical-align: middle;}
+
+.container .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
     </style>
 </head>
 
@@ -133,9 +150,18 @@ a:hover {
 
     <h1>Week 9: Audio Similarity and Transcription</h1>
 
+    <div class="container">
+  <img src="photo_2023-11-25_18-38-02.jpg" style="width:100%;">
+  <div class="content">
+      
     <h2>Task 1: Similarity</h2>
-
-  <h2>Task 2: Transcription</h2>
+    
+<p>For this task, I used the same tracks as in the previous two weeks. By default, the collection folder already contained tracks 0-9. While our task was to replace the .CSV files for tracks 7-9, which are in the genre of modern academic music. And since tracks 0-3 from the default folder were classical music, we can see their similarity, which is shown in the matrix. </p>
+  
+ </div>
+</div>
+    
+    <h2>Task 2: Transcription</h2>
 
   
  
