@@ -27,6 +27,10 @@
             text-align: center;
            text-shadow: 5px 5px 3px blue;
         }
+        h3
+        { text-align: center;
+          font-weight: bold;
+        }
         p {
             text-align: left;
             margin: 20px;
@@ -177,5 +181,18 @@ a:hover {
                 app.loadData(text);
             });
     </script>
-</body>
+
+    <h2>Task 2: Comparative Analysis</h2>
+
+    <h3>Comparison of a note element</h3>
+    
+<p>The <note> tag is used in both MusicXML and MEI to represent a note element, for example, encapsulating details such as the duration of a musical note. While MusicXML vertically organizes <note> elements, MEI presents them in a single horizontal line, facilitating a more convenient reading experience. This arrangement allows for a comprehensive view of all note attributes in MEI code at a glance.</p>
+
+    <h3>Comparison of an octave element</h3>
+   <p>In MusicXML and MEI (Music Encoding Initiative), the <octave> element is used to represent the octave shift of a note. In MusicXML, the <octave> element is typically a child element of the <note> element. It is used to specify the octave displacement of a note. In MEI, the <octave> element is also used to represent octave displacement, but it is typically part of the <staff> element rather than the <note> element.</p> 
+
+   <h3>Comparison of a key element</h3>
+       <p>In both MusicXML (Music eXtensible Markup Language) and MEI (Music Encoding Initiative), the <key> element is used to represent information about the key signature in a musical score. In MusicXML, the <key> element is used to specify the key signature. The element includes <fifths> and <mode>. In MEI, the <key> element is also used to represent the key signature, but it typically includes child elements such as <keySig> to provide more detailed information. </p>
+   
+   </body>
 </html>
