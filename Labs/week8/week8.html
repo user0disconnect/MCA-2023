@@ -24,6 +24,13 @@
             font-weight: bold;
             text-shadow: 5px 5px 3px blue;
         }
+       
+        p
+        {
+        margin: 20px;
+            line-height: 1.5;
+        }
+        
         details {
   max-width: 12rem;
   position: relative;
@@ -104,6 +111,22 @@ a:hover {
     filter: drop-shadow(0 0.5px 2px  blue);
             margin-left: 0px;
 }
+        {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
     </style>
 </head>
@@ -135,8 +158,21 @@ a:hover {
 
     <h2>Task 1: Extract features</h2>
 
- 
+    <p>For this week, I have chosen three compositions written by Arvo Pärt, which I used last week. On the screenshots below, you can see the Sonic Visualiser transformations, namely Spectrogram, Mel Frequency Cepstral Coefficient and Chromagram. </p>
 
+    <div class="row">
+  <div class="column">
+    <img src="lametate_full.png" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="pro_et_full.png" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="drei_full.png" style="width:100%">
+  </div>
+</div>
+
+    
 </body>
 
 </html>
